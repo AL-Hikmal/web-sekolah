@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SMAN 5 Pinrang</title>
+
+  <!-- Link CSS Eksternal -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Font Google (Poppins) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'poppins', sans-serif;
+      padding: 0px;
+    }
+
+    .artikel {
+      margin-bottom: 40px;
+    }
+
+    .judul {
+      font-size: 1.5em;
+      margin-bottom: 5px;
+    }
+
+    .tanggal {
+      color: gray;
+      font-size: 0.9em;
+      margin-bottom: 10px;
+    }
+  </style>
+
+  <!-- =======================
+       NAVBAR
+  ========================== -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <h2 class="logo">SMAN 5 Pinrang</h2>
+
+      <!-- Tombol Hamburger untuk Mobile -->
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="hamburger">&#9776;</label>
+
+      <!-- Link Navigasi -->
+      <ul class="nav-links">
+        <li><a href="sekolah.html">Beranda</a></li>
+        <li><a href="cerita.html">Tentang</a></li>
+        <li><a href="tatanan.html">Tatanan</a></li>
+        <li><a href="artikel.html">Artikel</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- =======================
+       HERO SECTION
+  ========================== -->
+  <header class="hero">
+    <div class="overlay">
+      <div class="hero-text">
+        <h1>Artikel Mengenai SMAN 5 Pinrang</h1>
+        <p>
+          Berisikan info terbaru seputar SMAN 5 Pinrang
+        </p>
+      </div>
+    </div>
+  </header>
+
+</head>
+
+<body>
+  <h1>Daftar Artikel</h1>
+  <div id="konten-artikel"></div>
+
+  <script>
+    fetch('artikel.json')
+      .then(res => res.json())
+      .then(data => {
+        const kontainer = document.getElementById('konten-artikel');
+        data.forEach(artikel => {
+          const el = document.createElement('div');
+          el.className = 'artikel';
+          el.innerHTML = `
+            <div class="judul">${artikel.judul}</div>
+            <div class="tanggal">${artikel.tanggal}</div>
+            <div class="isi">${artikel.konten}</div>
+          `;
+          kontainer.appendChild(el);
+        });
+      });
+  </script>
+</body>
+
+</html>
