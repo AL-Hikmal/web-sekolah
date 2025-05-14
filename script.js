@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Load data dari JSON
-fetch('../data/guru.json')
+fetch('WEB-SEKOLAH/guru.json')
   .then(response => response.json())
   .then(data => {
     guruData = data;

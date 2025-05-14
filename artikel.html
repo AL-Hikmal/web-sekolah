@@ -76,7 +76,7 @@
   <div id="konten-artikel"></div>
 
   <script>
-    fetch('Data/artikel.json')
+    fetch('artikel.json')
       .then(res => res.json())
       .then(data => {
         const kontainer = document.getElementById('konten-artikel');
@@ -88,7 +88,7 @@
             <div class="tanggal">${artikel.tanggal}</div>
             <div class="isi">${artikel.konten}</div>
           `;
-          kontainer.appendChild(el);
+          container.appendChild(el);
         });
       });
   </script>
