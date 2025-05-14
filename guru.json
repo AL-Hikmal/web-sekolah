@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "nama": "Muhammad Dahlan S.Pd., M.Pd.",
+        "foto": "guru1.jpg",
+        "jabatan": "Kepala Sekolah",
+        "mapel":"-",
+        "bio": "-.",
+        "nip": "-"
+    },
+    {
+        "id": 2,
+        "nama": "Jufri S.Pd., Gr., M.Pd.",
+        "foto": "guru2.jpg",
+        "jabatan": "Wakil Kepala Sekolah Bagian Kesiswaan",
+        "mapel": "Matematika",
+        "bio": "Spesialisasi dalam pembelajaran literasi digital.",
+        "nip": "198512102010012005"
+    }
+]
