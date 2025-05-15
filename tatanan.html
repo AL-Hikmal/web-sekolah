@@ -59,15 +59,83 @@
             <option value="">Semua Mapel</option>
             <option value="Matematika">Matematika</option>
             <option value="Bahasa Indonesia">Bahasa Indonesia</option>
+            <option value="Pendidikan Agama Islam">Pendidikan Agama Islam</option>
+            <option value="Bahasa Inggris">Bahasa Inggris</option>
+            <option value="Pendidikan Pancasila">Pendidikan Pancasila</option>
+            <option value="Seni Budaya">Seni Budaya</option>
+            <option value="Prakarya dan Kewirausahaan">Prakarya dan Kewirausahaan</option>
+            <option value="PJOK">PJOK</option>
+            <option value="Sejarah">Sejarah</option>
+            <option value="Kimia">Kimia</option>
+            <option value="Fisika">Fisika</option>
+            <option value="Biologi">Biologi</option>
+            <option value="Geografi">Geografi</option>
+            <option value="Sosiologi">Sosiologi</option>
+            <option value="Ekonomi">Ekonomi</option>
+            <option value="Bahasa Arab">Bahasa Arab</option>
+            <option value="Informatika">Informatika</option>
+            <option value="BK">BK</option>
+            <option value="-">-</option>
           </select>
         </div>
       </div>
       <div class="guru-grid" id="guru-container">
         <!-- Data guru akan di-load via JavaScript -->
-         
       </div>
     </section>
   </main>
-  <script src="script.js"></script>
+  <script>
+    const guruContainer = document.getElementById('guru-container');
+    const searchInput = document.getElementById('search-input');
+    const mapelFilter = document.getElementById('mapel-filter');
+    let guruData = [];
+
+    // Load data dari JSON
+    fetch('Data/guru.json')
+      .then(response => response.json())
+      .then(data => {
+        guruData = data;
+        renderGuru(data);
+      })
+      .catch(error => console.error('Error loading data:', error));
+
+    // Fungsi render data
+    function renderGuru(data) {
+      guruContainer.innerHTML = data.map(guru => `
+            <div class="guru-card" data-id="${guru.id}">
+                <img src="images/${guru.foto}" alt="${guru.nama}">
+                <div class="guru-info">
+                    <h3>${guru.nama}</h3>
+                    <p class="jabatan">${guru.jabatan}</p>
+                    <p class="mapel">${guru.mapel}</p>
+                    <p class="bio">${guru.bio}</p>
+                    <p class="nip"><small>NIP: ${guru.nip}</small></p>
+                </div>
+            </div>
+        `).join('');
+    }
+
+    // Fitur pencarian
+    searchInput.addEventListener('input', function (e) {
+      filterAndRender();
+    });
+
+    // Fitur filter mapel
+    mapelFilter.addEventListener('change', function (e) {
+      filterAndRender();
+    });
+
+    // Fungsi filter dan render gabungan
+    function filterAndRender() {
+      const searchTerm = searchInput.value.toLowerCase();
+      const selectedMapel = mapelFilter.value;
+      const filteredData = guruData.filter(guru => {
+        const matchesSearch = guru.nama.toLowerCase().includes(searchTerm) || guru.mapel.toLowerCase().includes(searchTerm);
+        const matchesMapel = selectedMapel === '' || guru.mapel === selectedMapel;
+        return matchesSearch && matchesMapel;
+      });
+      renderGuru(filteredData);
+    }
+  </script>
 
 </html>

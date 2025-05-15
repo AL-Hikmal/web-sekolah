@@ -33,7 +33,9 @@
       margin-bottom: 10px;
     }
   </style>
+</head>
 
+<body>
   <!-- =======================
        NAVBAR
   ========================== -->
@@ -46,12 +48,14 @@
       <label for="menu-toggle" class="hamburger">&#9776;</label>
 
       <!-- Link Navigasi -->
-      <ul class="nav-links">
+      <ul class="nav-links" style="margin-left: 370px;">
         <li><a href="index.html">Beranda</a></li>
         <li><a href="cerita.html">Tentang</a></li>
         <li><a href="tatanan.html">Tatanan</a></li>
         <li><a href="artikel.html">Artikel</a></li>
       </ul>
+      <!-- Dark Mode Toggle Button -->
+      <button id="dark-mode-toggle" aria-label="Toggle Dark Mode" style="background:none; border:none; color:#ff4b5c; font-size:1.2rem; cursor:pointer; margin-left:0px;">&#9788;</button>
     </div>
   </nav>
 
@@ -69,14 +73,11 @@
     </div>
   </header>
 
-</head>
-
-<body>
   <h1>Daftar Artikel</h1>
   <div id="konten-artikel"></div>
 
   <script>
-    fetch('data/artikel.json')
+    fetch('Data/artikel.json')
       .then(res => res.json())
       .then(data => {
         const kontainer = document.getElementById('konten-artikel');
@@ -88,10 +89,11 @@
             <div class="tanggal">${artikel.tanggal}</div>
             <div class="isi">${artikel.konten}</div>
           `;
-          container.appendChild(el);
+          kontainer.appendChild(el);
         });
       });
   </script>
+  <script src="script.js"></script>
 </body>
 
 </html>
