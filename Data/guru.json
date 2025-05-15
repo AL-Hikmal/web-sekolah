@@ -1,20 +1,434 @@
 [
-    {
-        "id": 1,
-        "nama": "Muhammad Dahlan S.Pd., M.Pd.",
-        "foto": "guru1.jpg",
-        "jabatan": "Kepala Sekolah",
-        "mapel":"-",
-        "bio": "-.",
-        "nip": "-"
-    },
-    {
-        "id": 2,
-        "nama": "Jufri S.Pd., Gr., M.Pd.",
-        "foto": "guru2.jpg",
-        "jabatan": "Wakil Kepala Sekolah Bagian Kesiswaan",
-        "mapel": "Matematika",
-        "bio": "-.",
-        "nip": "-"
-    }
+  {
+    "id": 1,
+    "nama": "Muhammad Dahlan, S.Pd., M.Pd.",
+    "foto": "guru1.jpg",
+    "jabatan": "Kepala Sekolah",
+    "mapel": "-",
+    "bio": "-",
+    "nip": "19710801 199802 1 003"
+  },
+  {
+    "id": 2,
+    "nama": "Jufri, S.Pd., Gr., M.Pd.",
+    "foto": "guru2.jpg",
+    "jabatan": "Wakasek Kesiswaan",
+    "mapel": "Matematika",
+    "bio": "-",
+    "nip": "19880427 201502 1 003"
+  },
+  {
+    "id": 3,
+    "nama": "Rahmah, S.S.",
+    "foto": "guru3.jpg",
+    "jabatan": "Wakasek Humas",
+    "mapel": "Bahasa Indonesia",
+    "bio": "-",
+    "nip": "19740918 200502 2 002"
+  },
+  {
+    "id": 4,
+    "nama": "Drs. Syamsuh Ali",
+    "foto": "guru4.jpg",
+    "jabatan": "Wakasek Kurikulum",
+    "mapel": "Matematika",
+    "bio": "-",
+    "nip": "19650817 199610 1 001"
+  },
+  {
+    "id": 5,
+    "nama": "Mursalim Alias, S.Pd.",
+    "foto": "guru5.jpg",
+    "jabatan": "Wakasek Sapras",
+    "mapel": "Bahasa Inggris",
+    "bio": "-",
+    "nip": "19750414 200312 1 006"
+  },
+  {
+    "id": 6,
+    "nama": "Zainuddin, S.Pd., M.Pd.",
+    "foto": "guru6.jpg",
+    "jabatan": "Guru Mapel",
+    "mapel": "Geografi",
+    "bio": "-",
+    "nip": "19691110 199512 1 002"
+  },
+  {
+    "id": 7,
+    "nama": "Drs. Nasri",
+    "foto": "guru7.jpg",
+    "jabatan": "Guru Mapel",
+    "mapel": "PJOK",
+    "bio": "-",
+    "nip": "19661231 199412 1 023"
+  },
+  {
+    "id": 8,
+    "nama": "Drs. H. Muhammad Anas",
+    "foto": "guru8.jpg",
+    "jabatan": "Guru Mapel",
+    "mapel": "PJOK",
+    "bio": "-",
+    "nip": "19680512 199512 1 005"
+  },
+  {
+    "id": 9,
+    "nama": "Drs. H. Abdul Rahman",
+    "foto": "guru9.jpg",
+    "jabatan": "Guru Mapel",
+    "mapel": "Sejarah",
+    "bio": "-",
+    "nip": "19691231 199601 1 002"
+  },
+  {
+    "id": 10,
+    "nama": "Hj. Surianti, S.Pd.",
+    "foto": "guru10.jpg",
+    "jabatan": "Guru Mapel",
+    "mapel": "Seni Budaya",
+    "bio": "-",
+    "nip": "19720627 199802 2 003"
+  },
+  {
+    "id": 11,
+    "nama": "Aisyah, S.Pd.",
+    "foto": "guru11.jpg",
+    "jabatan": "Guru Mapel",
+    "mapel": "Kimia",
+    "bio": "-",
+    "nip": "19740115 200502 2 006"
+  },
+  {
+    "id": 12,
+    "nama": "Hj. Hasnah B Baharuddin., S.S.",
+    "foto": "guru12.jpg",
+    "jabatan": "Guru Mapel",
+    "mapel": "Bahasa Inggris",
+    "bio": "-",
+    "nip": "19691114 200502 2 002"
+  },
+  {
+    "id": 13,
+    "nama": "Muhammad Akhzan Waris, S.Pd.",
+    "foto": "guru13.jpg",
+    "jabatan": "Guru Mapel",
+    "mapel": "Matematika",
+    "bio": "-",
+    "nip": "19821204 200604 1 010"
+  },
+  {
+    "id": 14,
+    "nama": "ST. Rohani, S.Pd.",
+    "foto": "guru14.jpg",
+    "jabatan": "Guru Mapel",
+    "mapel": "Bahasa Indonesia",
+    "bio": "-",
+    "nip": "19741115 200604 2 005"
+  },
+  {
+    "id": 15,
+    "nama": "Yuliana, S.Pd.",
+    "foto": "guru15.jpg",
+    "jabatan": "Guru Mapel",
+    "mapel": "Sosiologi",
+    "bio": "-",
+    "nip": "19670312 200701 2 037"
+  },
+  {
+    "id": 16,
+    "nama": "Wahida, S.Pd",
+    "foto": "guru16.jpg",
+    "jabatan": "Guru Mapel",
+    "mapel": "Ekonomi",
+    "bio": "-",
+    "nip": "19760315 200502 2 004"
+  },
+  {
+    "id": 17,
+    "nama": "Dahlia Saidi Jaya, S.Ag.",
+    "foto": "guru17.jpg",
+    "jabatan": "Guru Mapel",
+    "mapel": "Bahasa Arab",
+    "bio": "-",
+    "nip": "19760405 200701 2 020"
+  },
+  {
+    "id": 18,
+    "nama": "Hatifa NB, S.Pd.",
+    "foto": "guru19.jpg",
+    "jabatan": "Guru Mapel",
+    "mapel": "Sejarah",
+    "bio": "-",
+    "nip": "19851203 200901 2 005"
+  },
+  {
+    "id": 19,
+    "nama": "Drs. Nurhayati",
+    "foto": "guru20.jpg",
+    "jabatan": "Guru Mapel",
+    "mapel": "Pendidikan Agama Islam",
+    "bio": "-",
+    "nip": "19711231 200701 2 032"
+  },
+  {
+    "id": 20,
+    "nama": "Rahmawati Said, S.Si.",
+    "foto": "guru21.jpg",
+    "jabatan": "Guru Mapel",
+    "mapel": "Fisika",
+    "bio": "-",
+    "nip": "19791208 200604 2 015"
+  },
+  {
+    "id": 21,
+    "nama": "Darna, S.PdI",
+    "foto": "guru22.jpg",
+    "jabatan": "Guru Mapel",
+    "mapel": "Pendidikan Agama Islam",
+    "bio": "-",
+    "nip": "19721002 201001 2 003"
+  },
+  {
+    "id": 22,
+    "nama": "Sitti Nursani Mansyur, S.Kom.",
+    "foto": "guru23.jpg",
+    "jabatan": "Guru Mapel",
+    "mapel": "Informatika",
+    "bio": "-",
+    "nip": "19800420 201001 2 023"
+  },
+  {
+    "id": 23,
+    "nama": "Anwar, S.Pd.",
+    "foto": "guru24.jpg",
+    "jabatan": "Guru Mapel",
+    "mapel": "Fisika",
+    "bio": "-",
+    "nip": "19841118 201001 1 017"
+  },
+  {
+    "id": 24,
+    "nama": "Mariana, S.Pd.",
+    "foto": "guru25.jpg",
+    "jabatan": "Guru Mapel",
+    "mapel": "Biologi",
+    "bio": "-",
+    "nip": "19850831 201001 2 026"
+  },
+  {
+    "id": 25,
+    "nama": "Hamsinar, S.Pd.",
+    "foto": "guru26.jpg",
+    "jabatan": "Guru Mapel",
+    "mapel": "Matematika",
+    "bio": "-",
+    "nip": "19840212 201001 2 030"
+  },
+  {
+    "id": 26,
+    "nama": "Nurafni Fadillah, S.Pd.",
+    "foto": "guru27.jpg",
+    "jabatan": "Guru Mapel",
+    "mapel": "Bimbingan Konseling",
+    "bio": "-",
+    "nip": "19900718 201903 2 009"
+  },
+  {
+    "id": 27,
+    "nama": "Arma, S.Sos.",
+    "foto": "guru28.jpg",
+    "jabatan": "Guru Mapel",
+    "mapel": "Sosiologi",
+    "bio": "-",
+    "nip": "19860516 202221 2 035"
+  },
+  {
+    "id": 28,
+    "nama": "Al-Farida, S.Pd.",
+    "foto": "guru29.jpg",
+    "jabatan": "Guru Mapel",
+    "mapel": "Matematika",
+    "bio": "-",
+    "nip": "19900409 202221 2 027"
+  },
+  {
+    "id": 29,
+    "nama": "Hamnan, S.Pd.",
+    "foto": "guru30.jpg",
+    "jabatan": "Guru Mapel",
+    "mapel": "Seni Budaya",
+    "bio": "-",
+    "nip": "19880605 202221 2 026"
+  },
+  {
+    "id": 30,
+    "nama": "Nurhalima Hasanuddin, S.Pd.",
+    "foto": "guru31.jpg",
+    "jabatan": "Guru Mapel",
+    "mapel": "Bahasa Indonesia",
+    "bio": "-",
+    "nip": "19960115 202221 2 017"
+  },
+  {
+    "id": 31,
+    "nama": "Abd. Karim Musdaud, S.Pd.",
+    "foto": "guru32.jpg",
+    "jabatan": "Guru Mapel",
+    "mapel": "Bimbingan Konseling",
+    "bio": "-",
+    "nip": "19920717 202221 1 012"
+  },
+  {
+    "id": 32,
+    "nama": "Gasrum, S.T., M.M.",
+    "foto": "guru33.jpg",
+    "jabatan": "Guru Mapel",
+    "mapel": "Prakarya dan Kewirausahaan",
+    "bio": "-",
+    "nip": "19760521 202221 1 005"
+  },
+  {
+    "id": 33,
+    "nama": "Hasniati, S.Pd.",
+    "foto": "guru34.jpg",
+    "jabatan": "Guru Mapel",
+    "mapel": "Biologi",
+    "bio": "-",
+    "nip": "19821129 202321 2 023"
+  },
+  {
+    "id": 34,
+    "nama": "Jayadi, S.Pd.",
+    "foto": "guru35.jpg",
+    "jabatan": "Guru Mapel",
+    "mapel": "Kimia",
+    "bio": "-",
+    "nip": "19920605 202321 2 023"
+  },
+  {
+    "id": 35,
+    "nama": "Sriko, S.Pd.",
+    "foto": "guru36.jpg",
+    "jabatan": "Guru Mapel",
+    "mapel": "PJOK",
+    "bio": "-",
+    "nip": "19930906 202321 1 011"
+  },
+  {
+    "id": 36,
+    "nama": "Agustina, S.E.",
+    "foto": "guru37.jpg",
+    "jabatan": "Guru Mapel",
+    "mapel": "Ekonomi",
+    "bio": "-",
+    "nip": "19820818 202321 2 020"
+  },
+  {
+    "id": 37,
+    "nama": "Iskandar, S.Pd.",
+    "foto": "guru38.jpg",
+    "jabatan": "Guru Mapel",
+    "mapel": "Pendidikan Pancasila",
+    "bio": "-",
+    "nip": "19900707 202321 2 019"
+  },
+  {
+    "id": 38,
+    "nama": "Jumriani, S.Pd.",
+    "foto": "guru39.jpg",
+    "jabatan": "Guru Mapel",
+    "mapel": "Bahasa Indonesia",
+    "bio": "-",
+    "nip": "19910201 202321 2 042"
+  },
+  {
+    "id": 39,
+    "nama": "Maryam S., S.Pd.",
+    "foto": "guru40.jpg",
+    "jabatan": "Guru Mapel",
+    "mapel": "Pendidikan Pancasila",
+    "bio": "-",
+    "nip": "19921101 202321 2 054"
+  },
+  {
+    "id": 40,
+    "nama": "Syamsinar, S.Pd.I.",
+    "foto": "guru41.jpg",
+    "jabatan": "Guru Mapel",
+    "mapel": "Pendidikan Agama Islam",
+    "bio": "-",
+    "nip": "19791206 202321 2 016"
+  },
+  {
+    "id": 41,
+    "nama": "Erwin S., S.Pd.",
+    "foto": "guru42.jpg",
+    "jabatan": "Guru Mapel",
+    "mapel": "Bahasa Inggris",
+    "bio": "-",
+    "nip": "19910724 202421 1 010"
+  },
+  {
+    "id": 42,
+    "nama": "Rafifah Salsabila Suwardi,  S.Pd.",
+    "foto": "guru43.jpg",
+    "jabatan": "Guru Mapel",
+    "mapel": "Informatika",
+    "bio": "-",
+    "nip": "19990829 202421 2 014"
+  },
+  {
+    "id": 43,
+    "nama": "Muhammad Isah, S.Pd.",
+    "foto": "guru44.jpg",
+    "jabatan": "Guru Mapel",
+    "mapel": "Ekonomi",
+    "bio": "-",
+    "nip": "19911113 202321 1 017"
+  },
+  {
+    "id": 44,
+    "nama": "Hanisah Senreng, S.Pd.I.",
+    "foto": "guru45.jpg",
+    "jabatan": "Guru Mapel",
+    "mapel": "Pendidikan Agama Islam",
+    "bio": "-",
+    "nip": "-"
+  },
+  {
+    "id": 45,
+    "nama": "Nurfadillah Ulfa, S.Pd.",
+    "foto": "guru46.jpg",
+    "jabatan": "Guru Mapel",
+    "mapel": "Biologi",
+    "bio": "-",
+    "nip": "-"
+  },
+  {
+    "id": 46,
+    "nama": "Habibi, S.Pd.",
+    "foto": "guru47.jpg",
+    "jabatan": "Guru Mapel",
+    "mapel": "Pendidikan Pancasila",
+    "bio": "-",
+    "nip": "-"
+  },
+  {
+    "id": 47,
+    "nama": "Nurul Azmi Lengkang, S.Pd.",
+    "foto": "guru48.jpg",
+    "jabatan": "Guru Mapel",
+    "mapel": "Bahasa Inggris",
+    "bio": "-",
+    "nip": "-"
+  },
+  {
+    "id": 48,
+    "nama": "Karmila Sari, S.Pd.",
+    "foto": "guru49.jpg",
+    "jabatan": "Guru Mapel",
+    "mapel": "Bahasa Indonesia",
+    "bio": "-",
+    "nip": "-"
+  }
 ]
